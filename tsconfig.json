@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      // место сборки
+      "outDir": "./dist/",
+      // не позволяет использовать переменные без явного указания типа
+      "noImplicitAny": true,
+      "module": "es2020",
+      // в какую спецификацию компилируем
+      "target": "es5",
+      "jsx": "react-jsx",
+      // обработка не только тс файлов но и джс
+      "allowJs": true,
+      "moduleResolution": "node",
+      //
+      //"baseUrl": ".",
+      // позволяет рабоать с пакетами, которые используют common js
+      // как с обычными пакетами с помощью import (require() module.export) = common js
+      "esModuleInterop": true,
+      // default import по умолчанию
+      "allowSyntheticDefaultImports": true,
+    },
+    "ts-node": {
+        "compilerOptions": {
+          "module": "CommonJS"
+        }
+    }
+}
